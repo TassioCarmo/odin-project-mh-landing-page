@@ -84,11 +84,11 @@ header{
 
 .sign-button{
     width: 10em;
-    color:white;
+    color:#cfee1d;
     padding: 10px;
     margin:5em;
-    background-color: red;
-    border:2px solid white;
+    background-color: black;
+    border:2px solid #cfee1d;
     border-radius: 20px;
     font-size: 10px 0;
     /*outline: none;
@@ -106,7 +106,7 @@ header{
 
 .features-container {
     width: 100%;
-    background-color: rgba(127, 125, 125, 0.2);;
+    background-color: rgba(127, 125, 125, 0.2);
     height: 25em;
     padding-top: 2em;
     padding-bottom: 2em;
