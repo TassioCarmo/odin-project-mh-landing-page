@@ -8,8 +8,7 @@
 }
 
 body {
-    /*ackground-image: url("https://img5.goodfon.com/wallpaper/nbig/0/9a/art-monster-hunter-diablos.jpg");*/
-    background-color: gray;
+    background-image: url("https://www.monsterhunterworld.com/images/common/bg_page.jpg");
     color: #b59f58;
 
 }
@@ -18,7 +17,7 @@ body {
 
 header{
     width: 100%;
-    background-color: #4e2208;
+    background-color: black;
     flex-direction: row;
     justify-content: space-between;
     display: flex;
@@ -96,7 +95,7 @@ button{
 
 
 .features-container {
-    background-color: darkred;
+    background-color: rgba(127, 125, 125, 0.2);;
     height: 25em;
     padding: 5em;   
     border-radius: 20px;
@@ -114,19 +113,21 @@ button{
 
 
 .features-itens{
-    width: 17em;
-    border: 4px solid darkslategray;
+    width: 25em;
 
 
 }
 
 .features-images {
-    width: 17em;
+    width: 25em;
+    height: 25em;
 }
 
 
 .feature-title{
-
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
 }
 
 
