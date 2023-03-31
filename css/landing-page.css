@@ -2,6 +2,20 @@
 
 }*/
 
+/*Things to "remember" */
+
+/* main axis is defined by the flex-direction property,*/
+
+/* flex-wrap property determines how your flex items behave when the flex container is too small.*/
+
+/* wrap will allow the items to wrap to the next row or column.*/
+
+/* nowrap (default) will prevent your items from wrapping and shrink them if needed.*/
+
+/* justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them.*/
+
+/*align-items property positions the flex content along the cross axis*/
+
 *{
     margin: 0;
     padding: 0;
@@ -66,20 +80,28 @@ header{
 
 .introduction-image-container{
     margin: 2em;
-    width:30vw;
+    /*width: 40vw;*/
+    width: 450px;
+
 
     
 }
 
 .introduction-image {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    object-fit: cover;
 }
 
 
 .introduction-text-container{
     width: 35vw;
     margin: 2em;
+}
+
+.introduction-title {
+    font-size: 2.5em;
 }
 
 .sign-button{
@@ -95,13 +117,10 @@ header{
     cursor: pointer;*/
 }
 
-.introduction-title{
-    font-size: 2.5em;
-}
+
 
 
 /*Everything inside the feature container*/
-
 
 
 .features-container {
@@ -112,26 +131,24 @@ header{
     padding-bottom: 2em;
     border-radius: 20px;
     margin-bottom: 2em;
-    flex-direction: row;
-    flex-wrap: wrap;
+
 
 
 }
 
 .features-itens-container{
     display: flex;
-    gap: 8px;
-    flex-direction: row;
+    gap: 6px;
     flex-wrap: wrap;
 
 }
 
 .features-itens{
-    width: 23em;
+    width: 21em;
 }
 
 .features-images {
-    width: 23em;
+    width: 21em;
     height: 17em;
 }
 
@@ -140,8 +157,7 @@ header{
     margin-bottom: 1em;
     display: flex;
     justify-content: center;
-    font-weight: 900;
-    font-size: 36px;
+
 }
 
 .feature-text{
@@ -176,6 +192,19 @@ header{
     font-size: 2em;   
 }
 
+.feature-title, .call-title{
+
+    font-weight: 900;
+    font-size: 36px;
+
+}
+
+.feature-text,.call-text{
+    font-size: 1em;
+}
+
+
+
 /*call to action*/
 .call-container{
     border-radius: 20px;
@@ -184,15 +213,19 @@ header{
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.call-text-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 7em;
+}
+
+
 /*footer*/
 #contact{
     width: 100%;
     background-color: black;
 }
-
-
-
-/*36px light italic*/
 
 
 
