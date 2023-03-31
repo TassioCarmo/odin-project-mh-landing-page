@@ -5,55 +5,68 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/landing-page.css">
-        <title>Monster Hunter Project</title>
+        <link rel="icon" type="image/x-icon" href="resources/page-favicon.ico">
+        <title>Monster Hunter Landing Page Project</title>
     </head>
     <body>
-        <header>
-            <h2>Monster hunter</h2>
-            <nav>
-                <li>header link one</li>
-                <li>header link one</li>
-                <li>header link one</li>
+        <header id="header">
+            <img id="logo" src="resources/Monster_Hunter_logo.png" alt="logo" />
+            <nav id="nav-bar">
+                <a class="nav-link" href="#About">About</a>
+                <a class="nav-link" href="#Features">Features</a>
+                <a class="nav-link" href="#Contact">Contact</a>
             </nav>
         </header>
-        <div>
-            <div>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni quae ipsum natus provident tenetur quam rem,
-                    totam repellat commodi repudiandae adipisci,
-                    necessitatibus impedit sunt dolorem iste est amet facilis omnis!</p>
-                    <button>Sign up</button>
+        <section class="introduction-container">
+            <div class="introduction-text">
+                <h2>Welcome to Monster Hunter.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, ad! Dolor reprehenderit neque excepturi aperiam tempore labore alias nisi exercitationem.</p>
+                    <button class="sign-button">Sign up</button>
             </div>
             <div>
-                <img src="resources/monsterhunterworld.jpg" alt="Monster Hunter image">
+                <img class="introduction-image" src="resources/monsterhunterworld.jpg" alt="Monster Hunter image">
             </div>
-        </div>
-        <div class="container">
-            <h2 class="">Lorem, ipsum dolor.</h2>   
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis delectus sunt quos.
-                Alias obcaecati laboriosam, illo itaque magnam repellat cumque quasi,
-                voluptatibus, doloribus porro exercitationem deserunt deleniti quam rerum?</p> 
-            <p>Lorem ipsum dolor sit amet.</p> 
-        </div>
-        <div>
+        </section>
+
+        <section class="features-container">
+            <div class="feature-title"></div>
+                <h2 >Features</h2>               
+            </div>
+            <div class="features-itens-container">
+                <div class="features-itens">
+                    <a href="https://www.monsterhunter.com."><img class="features-images" src="resources/games-logo.png" alt="gamepad icon"></a>
+                    <p>lorem</p>
+                </div>
+                <div class="features-itens">
+                    <a href="https://www.monsterhunter.com."><img class="features-images" src="resources/games-logo.png"
+                            alt="gamepad icon"></a>
+                    <p>Lorem</p>
+                </div>
+                <div class="features-itens">
+                    <a href="https://www.monsterhunter.com"><img class="features-images" src="resources/games-logo.png"
+                            alt="gamepad icon"></a>
+                    <p>Lorem</p>
+                </div>
+                <div class="features-itens">
+                    <a href="https://www.monsterhunter.com"><img class="features-images" src="resources/games-logo.png"
+                            alt="gamepad icon"></a>
+                    <p>Lorem</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>WHERE ARE MY DRAGONATORS</p> 
+            <p>-Commander</p> 
+        </section>
+        <section>
             <div>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni quae ipsum natus provident tenetur quam rem,
-                    totam repellat commodi repudiandae adipisci,
-                    necessitatibus impedit sunt dolorem iste est amet facilis omnis!</p>
+                <h2>Call to action! It's time!</h2>
+                <p>Sign up for our product by clicking that button right over there!</p>
                 
             </div>
             <div> <button>Sign up</button></div>
-        </div>
-        <footer>
+        </section>
+        <footer id="Contact">
             <p>Page by Tassio Carmo</p>
         </footer>    
     </body>
