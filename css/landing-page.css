@@ -1,6 +1,6 @@
-:root{
+/*:root{
 
-}
+}*/
 
 *{
     margin: 0;
@@ -52,31 +52,38 @@ header{
     font-size: large;
 }
 
+/*everything inside the introduction*/
+
 .introduction-container{
-    flex-direction: ;
     border-radius: 20px;
     display: flex;
     margin: 6em;
     background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.introduction-image-container{
+    margin: 2em;
+    width:30vw;
+
     
 }
 
 .introduction-image {
-    width: 40vw;
-    height: auto;
-    margin:2em;
-    justify-content: right;
-    
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.introduction-text{
-    align-items: center;
+
+.introduction-text-container{
+    width: 35vw;
     margin: 2em;
 }
 
 .sign-button{
-    width:20em;
-    height: auto;
+    width: 10em;
     color:white;
     padding: 10px;
     margin:5em;
@@ -84,36 +91,43 @@ header{
     border:2px solid white;
     border-radius: 20px;
     font-size: 10px 0;
-    outline: none;
-    cursor: pointer;
+    /*outline: none;
+    cursor: pointer;*/
+}
+
+.introduction-title{
+    font-size: 2.5em;
 }
 
 
-/*Everything insde the feature contaiter*/
+/*Everything inside the feature container*/
 
 
 
 .features-container {
+    width: 100%;
     background-color: rgba(127, 125, 125, 0.2);;
     height: 25em;
     padding-top: 2em;
     padding-bottom: 2em;
     border-radius: 20px;
     margin-bottom: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 
 }
 
 .features-itens-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
 .features-itens{
     width: 23em;
-
 }
 
 .features-images {
