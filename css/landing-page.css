@@ -9,6 +9,8 @@
 
 body {
     background-image: url("https://www.monsterhunterworld.com/images/common/bg_page.jpg");
+    /*background-image: url("resources/background-image.jpg");*/
+    background-attachment: fixed;
     color: #b59f58;
 
 }
@@ -51,9 +53,8 @@ header{
 }
 
 .introduction-container{
+    flex-direction: ;
     border-radius: 20px;
-    flex-direction: row;
-    justify-content: space-between;
     display: flex;
     margin: 6em;
     background-color: rgba(0, 0, 0, 0.7);
@@ -63,10 +64,8 @@ header{
 .introduction-image {
     width: 40vw;
     height: auto;
-    opacity: 1;
     margin:2em;
     justify-content: right;
-    opacity: 1;
     
 }
 
@@ -75,7 +74,7 @@ header{
     margin: 2em;
 }
 
-button{
+.sign-button{
     width:20em;
     height: auto;
     color:white;
@@ -97,7 +96,8 @@ button{
 .features-container {
     background-color: rgba(127, 125, 125, 0.2);;
     height: 25em;
-    padding: 5em;   
+    padding-top: 2em;
+    padding-bottom: 2em;
     border-radius: 20px;
     margin-bottom: 2em;
 
@@ -111,25 +111,74 @@ button{
 
 }
 
-
 .features-itens{
-    width: 25em;
-
+    width: 23em;
 
 }
 
 .features-images {
-    width: 25em;
-    height: 25em;
+    width: 23em;
+    height: 17em;
 }
 
 
 .feature-title{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     display: flex;
     justify-content: center;
+    font-weight: 900;
+    font-size: 36px;
 }
 
+.feature-text{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*quote*/
+
+.quote{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.quote-text{
+    font-size: 3em;
+    font-style: italic;
+    font-family: 'playfair display';
+}
+
+.quote-autor{
+    display: flex;
+    justify-content: center;
+    padding-left: 30em;
+    margin-top: 2em;
+}
+
+.quote-author-text{
+    font-size: 2em;   
+}
+
+/*call to action*/
+.call-container{
+    border-radius: 20px;
+    display: flex;
+    margin: 6em;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*footer*/
+#contact{
+    width: 100%;
+    background-color: black;
+}
+
+
+
+/*36px light italic*/
 
 
 
