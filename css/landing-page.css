@@ -164,7 +164,10 @@ header{
 
 .feature-text{
     margin-top: 1em;
-    padding-left: 8em;
+    padding-left: 4.5em;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: bold;
 
 }
 
@@ -199,10 +202,6 @@ header{
 
 }
 
-.feature-text,.call-text{
-    font-size: 1em;
-}
-
 
 
 /*call to action*/
@@ -217,8 +216,13 @@ header{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 7em;
+    margin-left: 15em;
 }
+
+.call-text{
+    font-size: 1.5em;
+}
+
 
 
 /*footer*/
