@@ -70,18 +70,18 @@ header{
 
 .introduction-container{
     border-radius: 20px;
-    display: flex;
     margin: 6em;
     background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
 .introduction-image-container{
     margin: 2em;
     /*width: 40vw;*/
-    width: 450px;
+    width: 40em;
 
 
     
@@ -89,9 +89,8 @@ header{
 
 .introduction-image {
     width: 100%;
-    max-width: 450px;
+    max-width: 40em;
     height: 350px;
-    object-fit: cover;
 }
 
 
@@ -124,13 +123,17 @@ header{
 
 
 .features-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     background-color: rgba(127, 125, 125, 0.2);
-    height: 25em;
     padding-top: 2em;
     padding-bottom: 2em;
     border-radius: 20px;
     margin-bottom: 2em;
+    justify-content: center;
+    
 
 
 
@@ -140,6 +143,7 @@ header{
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
+    margin:1em;
 
 }
 
@@ -155,15 +159,12 @@ header{
 
 .feature-title{
     margin-bottom: 1em;
-    display: flex;
-    justify-content: center;
 
 }
 
 .feature-text{
     margin-top: 1em;
-    display: flex;
-    justify-content: center;
+    padding-left: 8em;
 
 }
 
