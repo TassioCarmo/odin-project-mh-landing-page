@@ -81,7 +81,7 @@ header{
 .introduction-image-container{
     margin: 2em;
     /*width: 40vw;*/
-    width: 40em;
+    width: 39em;
 
 
     
@@ -89,7 +89,7 @@ header{
 
 .introduction-image {
     width: 100%;
-    max-width: 40em;
+    max-width: 39em;
     height: 350px;
 }
 
