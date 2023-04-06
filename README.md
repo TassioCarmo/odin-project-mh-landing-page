@@ -2,6 +2,6 @@
 
 ## Landing page sobre o jogo monster hunter usando conceitos básicos de HTML/CSS
 
-TassioCarmo.github.io/odin-project-mh-landing-page/
+<a href="TassioCarmo.github.io/odin-project-mh-landing-page/">Live version</a>
 
 
