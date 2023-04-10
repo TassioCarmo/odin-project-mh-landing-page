@@ -16,7 +16,10 @@
 
 /*align-items property positions the flex content along the cross axis*/
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,700;0,900;1,800&display=swap');
+
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -42,10 +45,11 @@ header{
 
 
 #logo {
+    box-sizing: content-box;
     width: 7em;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 2em;
+
 
 }
 
@@ -61,59 +65,73 @@ header{
 .nav-link {
     color: #b59f58;
     text-decoration: none;
-    justify-content: left;
-    font-weight: bold;
-    font-size: large;
+    font-weight: 700;
+    font-size: 1.7em;
+    font-family: 'Source Sans 3',
+        sans-serif;
 }
 
 /*everything inside the introduction*/
 
 .introduction-container{
     border-radius: 20px;
-    margin: 6em;
+    margin: 7em;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding-top: 1em;
 }
 
 .introduction-image-container{
     margin: 2em;
     /*width: 40vw;*/
     width: 39em;
+    display: flex;
 
 
     
 }
 
 .introduction-image {
-    width: 100%;
+
+    /*width: 100%;*/
     max-width: 39em;
-    height: 350px;
+    /*height: 350px;*/
 }
 
 
 .introduction-text-container{
     width: 35vw;
     margin: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .introduction-title {
     font-size: 2.5em;
 }
 
+.introduction-text{
+    margin-top: 1em;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
 .sign-button{
     width: 10em;
     color:#cfee1d;
     padding: 10px;
-    margin:5em;
+    margin: 4em;
+    margin-left: 10em;
     background-color: black;
     border:2px solid #cfee1d;
     border-radius: 20px;
-    font-size: 10px 0;
-    /*outline: none;
-    cursor: pointer;*/
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
 }
 
 
@@ -141,7 +159,6 @@ header{
 
 .features-itens-container{
     display: flex;
-    gap: 6px;
     flex-wrap: wrap;
     margin:1em;
 
@@ -151,8 +168,17 @@ header{
     width: 21em;
 }
 
+
+#features-itens-monsters{
+    margin-right:5em;
+}
+
+#features-itens-community{
+    margin-left: 3em;
+}
+
 .features-images {
-    width: 21em;
+    width: auto;
     height: 17em;
 }
 
@@ -168,6 +194,7 @@ header{
     font-size: 1.5vw;
     font-style: italic;
     font-weight: bold;
+    
 
 }
 
@@ -210,6 +237,8 @@ header{
     display: flex;
     margin: 6em;
     background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 .call-text-container{
@@ -220,8 +249,10 @@ header{
 }
 
 .call-text{
+    margin-top: 1em;
     font-size: 1.5em;
 }
+
 
 
 
