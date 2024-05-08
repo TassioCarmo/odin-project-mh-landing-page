@@ -1,4 +1,7 @@
-## Landing page from the game monster hunter using basic concepts of HTML/CSS(flexbox)
+# Landing Page using fundamental concepts of html, css and javascript
 
-## Landing page sobre o jogo monster hunter usando conceitos básicos de HTML/CSS(flexbox)
+## What i learn 
 
+- Flexbox and its properties
+- Responsible Design
+- hamburger
