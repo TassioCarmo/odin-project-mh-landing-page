@@ -1,0 +1,351 @@
+@import url("reset.css");
+
+/*:root{
+
+}*/
+
+/*Things to "remember" */
+
+/* main axis is defined by the flex-direction property,*/
+
+/* flex-wrap property determines how your flex items behave when the flex container is too small.*/
+
+/* wrap will allow the items to wrap to the next row or column.*/
+
+/* nowrap (default) will prevent your items from wrapping and shrink them if needed.*/
+
+/* justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them.*/
+
+/*align-items property positions the flex content along the cross axis*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,700;0,900;1,800&display=swap');
+
+
+/* || Variables  */
+
+:root {
+    /* Typography */
+    --header-font-family: 'Source Sans 3',
+        sans-serif;
+
+    --font-size-navigator: 1.7rem;
+    --font-weight-navigator: 700;
+
+    /* COLORS */
+    --background-color-header: black;
+    --background-color-main: orange;
+    --background-color-footer: orange;
+    --background-color-container: rgba(0, 0, 0, 0.3);
+
+    --font-color-navigator: #f4f4f4;
+    --font-color-navigator-hover: #b59f58;
+    --font-color-main: #b59f58;
+
+    --main-background-image: url("https://www.monsterhunterworld.com/images/common/bg_page.jpg");
+
+
+    /*  BORDERS */
+
+}
+
+
+
+
+body {
+    background-image: var(--main-background-image);
+    /*background-image: url("resources/background-image.jpg");*/
+    background-attachment: fixed;
+
+}
+
+/* || HEADER  */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+#logo {
+    box-sizing: content-box;
+    width: 7em;
+    margin-left: 1rem;
+    padding: 2em;
+
+
+}
+
+#nav-bar {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2em;
+
+
+}
+
+.nav-link {
+    font-weight: var(--font-weight-navigator);
+    font-size: var(--font-size-navigator);
+    font-family: 'Source Sans 3',
+        sans-serif;
+    color: var(--font-color-navigator);
+
+}
+
+.nav-link:hover {
+    color: var(--font-color-navigator-hover);
+    text-shadow: 0 0 5px rgb(181, 159, 88), 0 0 12px rgb(81, 159, 88), 0 0 20px rgb(81, 159, 88);
+}
+
+
+/* || Main  */
+
+
+.main {
+    color: var(--font-color-main);
+
+}
+
+
+.introduction-container {
+    background-color: var(--background-color-container);
+    box-shadow: 0 0 2em rgb(69, 69, 69);
+    display: flex;
+    margin: 12rem 6rem;
+    border-radius: 1.5em;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    #nav-bar {
+        display: none;
+    }
+
+    .introduction-container {
+        flex-direction: column;
+        margin: 12rem 3rem;
+    }
+
+
+}
+
+.introduction-image-container {
+    margin: 2em;
+    flex: 1;
+
+}
+
+.introduction-text-container {
+    margin: 2em;
+    flex: 1;
+
+
+}
+
+.introduction-image {
+    min-width: 15em;
+}
+
+
+/*.introduction-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69, 69, 69);
+    display: flex;
+    margin: 4em;
+    flex-wrap: wrap;
+}
+
+.introduction-image-container,
+.introduction-text-container {
+    margin: 2em;
+}
+
+.introduction-image {
+    min-width: 15em;
+}
+
+.introduction-image-container,
+.introduction-text-container {
+    flex: 1;
+}
+
+.introduction-image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+*/
+
+
+
+
+
+
+.introduction-title {
+    font-size: 2.2em;
+    text-shadow: 0 0 0.8em rgb(255, 255, 255);
+    text-align: center;
+    /*font-family: "kawashiro";*/
+}
+
+.introduction-text {
+    margin-top: 1em;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.sign-button {
+    color: #cfee1d;
+    background-color: black;
+    border: 0.2em solid #cfee1d;
+    cursor: pointer;
+    border-radius: 2em;
+    width: 10em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    font-size: 1.2em;
+}
+
+
+
+
+/*Everything inside the feature container*/
+
+
+.features-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgba(127, 125, 125, 0.2);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 20px;
+    margin-bottom: 2em;
+    justify-content: center;
+
+
+
+
+}
+
+.features-itens-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+
+}
+
+.features-itens {
+    width: 21em;
+}
+
+
+#features-itens-monsters {
+    margin-right: 5em;
+}
+
+#features-itens-community {
+    margin-left: 3em;
+}
+
+.features-images {
+    width: auto;
+    height: 17em;
+}
+
+
+.feature-title {
+    margin-bottom: 1em;
+
+}
+
+.feature-text {
+    margin-top: 1em;
+    padding-left: 4.5em;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: bold;
+
+
+}
+
+/*quote*/
+
+.quote {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 3em;
+    font-style: italic;
+
+}
+
+
+
+.quote-autor {
+    display: flex;
+    justify-content: center;
+    padding-left: 30em;
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+
+
+.feature-title,
+.call-title {
+
+    font-weight: 900;
+    font-size: 36px;
+
+}
+
+
+
+/*call to action*/
+.call-container {
+    border-radius: 20px;
+    display: flex;
+    margin: 6em;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.call-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15em;
+}
+
+.call-text {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+
+
+
+/*footer*/
+#contact {
+    width: 100%;
+    background-color: black;
+}
