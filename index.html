@@ -6,23 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/main.css">
-    <link rel="icon" type="image/x-icon" href="page-favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./page-favicon.ico">
     <title>Monster Hunter Landing Page Project</title>
 </head>
 
 <body>
     <header class="header">
-        <img id="logo" src="./src/assets/Monster_Hunter_logo.png" alt="logo" />
-        <nav id="nav-bar">
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#features">Features</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-        </nav>
+        <div class="header-left-side">
+            <img id="logo" src="./src/assets/Monster_Hunter_logo.png" alt="logo" />
 
+            <div id="hamburger-menu">
+                <div id="hamburger-menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="nav-hamburger-menu-bar" id="nav-hamburger-menu-bar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
 
+            <div class="menu-bg" id="menu-bg"></div>
+        </div>
+        <div class="header-right-side">
+            <nav class="nav-bar">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
@@ -47,23 +64,23 @@
             <div class="feature-title">
                 <h2>Features</h2>
             </div>
-            <div class="features-itens-container">
-                <div class="features-itens">
+            <div class="features-items-container">
+                <div class="features-items">
                     <a href="https://www.monsterhunter.com/" target="_blank"><img class="features-images"
                             src="./src/assets/games-logo.png" alt="gamepad icon"></a>
                     <p class="feature-text">Games</p>
                 </div>
-                <div id="features-itens-weapons" class="features-itens">
+                <div id="features-items-weapons" class="features-items">
                     <a href="http://www.monsterhunterworld.com/us/sp/hunting/01.php" target="_blank"><img
                             class="features-images" src="./src/assets/weapons-logo.png" alt="gamepad icon"></a>
                     <p class="feature-text">Weapons</p>
                 </div>
-                <div id="features-itens-monsters" class="features-itens">
+                <div id="features-items-monsters" class="features-items">
                     <a href="https://monsterhunterworld.wiki.fextralife.com/Monsters" target="_blank"><img
                             class="features-images" src="./src/assets/monster-logo.png" alt="gamepad icon"></a>
                     <p class="feature-text">Monsters</p>
                 </div>
-                <div id="features-itens-community" class="features-itens">
+                <div id="features-items-community" class="features-items">
                     <a href="https://www.reddit.com/r/MonsterHunter/" target="_blank"><img class="features-images"
                             src="./src/assets/community-logo.png" alt="gamepad icon"></a>
                     <p class="feature-text">Community</p>
@@ -89,6 +106,7 @@
     <footer class="call-contact">
         <p>Page</p>
     </footer>
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
