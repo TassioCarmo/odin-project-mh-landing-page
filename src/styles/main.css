@@ -28,7 +28,7 @@
     --header-font-family: 'Source Sans 3',
         sans-serif;
 
-    --font-size-navigator: 1.7rem;
+    --font-size-navigator: 1.3rem;
     --font-size-button: 1.1rem;
     --font-size-introduction-text: 1.1rem;
     --font-size-quote: 2.5rem;
@@ -118,9 +118,9 @@ header {
 
 #logo {
     box-sizing: content-box;
-    width: 7em;
+    width: 5em;
     margin-left: 3rem;
-    padding: 2em;
+    padding: 1em;
 
 }
 
@@ -156,8 +156,6 @@ header {
 
     #logo {
         box-sizing: content-box;
-        width: 7em;
-        margin-left: 3rem;
         padding: 2em;
         padding-left: 16em;
         transition: var(--transitions-hamburger-menu);

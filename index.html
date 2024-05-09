@@ -23,10 +23,9 @@
                 </div>
                 <nav class="nav-hamburger-menu-bar" id="nav-hamburger-menu-bar">
                     <ul>
-                        <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,7 +34,7 @@
         </div>
         <div class="header-right-side">
             <nav class="nav-bar">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#">About</a>
                 <a class="nav-link" href="#features">Features</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </nav>
@@ -60,7 +59,7 @@
             </div>
         </section>
 
-        <section class="features-container">
+        <section id="features" class="features-container">
             <div class="feature-title">
                 <h2>Features</h2>
             </div>
@@ -87,6 +86,7 @@
                 </div>
             </div>
         </section>
+        
         <section class="quote-container">
             <div class="quote">
                 <p class="quote-text">"WHERE ARE MY DRAGONATORS?"</p>
@@ -105,8 +105,10 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <a class="github-link" href="https://github.com/TassioCarmo/odin-project-mh-landing-page"><p>Webpage by: Tassio</p> </a>
+    <footer id="contact" class="footer">
+        <a class="github-link" href="https://github.com/TassioCarmo/odin-project-mh-landing-page">
+            <p>Webpage by: Tassio</p>
+        </a>
     </footer>
     <script src="./src/js/main.js"></script>
 </body>
