@@ -25,6 +25,7 @@
 
 :root {
     /* Typography */
+
     --header-font-family: 'Source Sans 3',
         sans-serif;
 
@@ -37,16 +38,18 @@
     --font-weight-navigator: 700;
 
     /* COLORS */
-    --font-color-navigator: #b59f58;
-    --font-color-navigator-hover: #cfee1d;
-    --font-color-main: #b59f58;
-    --font-color-button: #b59f58;
-    --font-color-button-hover: #cfee1d;
+    --main-color: #b59f58;
+    --main-color-hover: #cfee1d;
+    --font-color-navigator: var(--main-color);
+    --font-color-navigator-hover: var(--main-color-hover);
+    --font-color-main: var(--main-color);
+    --font-color-button: var(--main-color);
+    --font-color-button-hover: var(--main-color-hover);
     --font-color-footer: white;
-    --font-color-footer-hover: #cfee1d;
+    --font-color-footer-hover: var(--main-color-hover);
 
 
-    --border-color-button-hover: #cfee1d;
+    --border-color-button-hover: var(--main-color-hover);
 
 
 
@@ -59,14 +62,14 @@
     --background-color-button: black;
     --background-color-call-container: #4d0b0b;
     --background-color-call-items-container: #202020;
-    --background-color-hamburger: #b59f58;
+    --background-color-hamburger: var(--main-color);
 
 
     /* shadows*/
 
-    --box-shadow-introduction-container: 0 0 1em #b59f58;
-    --box-shadow-features-images-hover: 0 0 2em #b59f58;
-    --box-shadow-button-hover: 0 0 0.6em #cfee1d;
+    --box-shadow-introduction-container: 0 0 1em  var(--main-color);;
+    --box-shadow-features-images-hover: 0 0 2em  var(--main-color);;
+    --box-shadow-button-hover: 0 0 0.6em var(--main-color-hover);;
 
 
     --text-shadow-nav: 0 0 5px rgb(181, 159, 88), 0 0 12px rgb(81, 159, 88), 0 0 20px rgb(81, 159, 88);
@@ -75,8 +78,8 @@
 
     /*  BORDERS */
 
-    --border-button: 0.2em solid #b59f58;
-    --border-features-images: 0.3em solid #b59f58;
+    --border-button: 0.2em solid  var(--main-color);;
+    --border-features-images: 0.3em solid  var(--main-color);;
 
 
 
@@ -159,7 +162,7 @@ header {
         padding: 2em;
         padding-left: 16em;
         transition: var(--transitions-hamburger-menu);
-    
+
     }
 
     .nav-bar {
