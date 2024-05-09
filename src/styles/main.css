@@ -29,42 +29,62 @@
         sans-serif;
 
     --font-size-navigator: 1.7rem;
+    --font-size-button: 1.1rem;
+    --font-size-introduction-text: 1.1rem;
+    --font-size-quote: 2.5rem;
+    --font-size-quote-author: 1rem;
+
     --font-weight-navigator: 700;
 
     /* COLORS */
     --font-color-navigator: #b59f58;
     --font-color-navigator-hover: #cfee1d;
     --font-color-main: #b59f58;
+    --font-color-button: #b59f58;
+    --font-color-button-hover: #cfee1d;
+    --font-color-footer: white;
+    --font-color-footer-hover: #cfee1d;
+
+
+    --border-color-button-hover: #cfee1d;
+
+
 
     --background-color-header: black;
     --background-color-main: orange;
     --background-color-footer: orange;
-    --background-color-container: rgba(0, 0, 0, 0.3);
-
-    --hamburger-background-color: #b59f58;
-
-    --button-color-introduction: #b59f58;
-    --button-color-introduction-hover: #cfee1d;
-    --button-background-color-introduction: black;
-
+    --background-color-introduction-container: rgba(0, 0, 0, 0.3);
+    --background-color-features-container: rgba(127, 125, 125, 0.2);
+    --background-color-hamburger-container: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    --background-color-button: black;
+    --background-color-call-container: #4d0b0b;
+    --background-color-call-items-container: #202020;
+    --background-color-hamburger: #b59f58;
 
 
     /* shadows*/
 
-    --introduction-container-box-shadow: 0 0 2em rgb(69, 69, 69);
+    --box-shadow-introduction-container: 0 0 1em #b59f58;
+    --box-shadow-features-images-hover: 0 0 2em #b59f58;
+    --box-shadow-button-hover: 0 0 0.6em #cfee1d;
 
-    --nav-text-shadow: 0 0 5px rgb(181, 159, 88), 0 0 12px rgb(81, 159, 88), 0 0 20px rgb(81, 159, 88);
-    --introduction-text-shadow: 0 0 0.8em rgb(255, 255, 255);
+
+    --text-shadow-nav: 0 0 5px rgb(181, 159, 88), 0 0 12px rgb(81, 159, 88), 0 0 20px rgb(81, 159, 88);
+    --text-shadow-introduction: 0 0 0.8em rgb(255, 255, 255);
 
 
     /*  BORDERS */
+
+    --border-button: 0.2em solid #b59f58;
+    --border-features-images: 0.3em solid #b59f58;
+
 
 
     --main-background-image: url("https://www.monsterhunterworld.com/images/common/bg_page.jpg");
 
     /*Transitions*/
 
-    --hamburger-menu-transitions: 0.3s ease;
+    --transitions-hamburger-menu: 0.3s ease;
 
 
 }
@@ -90,6 +110,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
+
 }
 
 /* || Logo ||  */
@@ -99,7 +121,6 @@ header {
     width: 7em;
     margin-left: 3rem;
     padding: 2em;
-
 
 }
 
@@ -111,7 +132,6 @@ header {
     align-items: center;
     padding: 1em 1.5em;
     gap: 1em;
-
 }
 
 .nav-link {
@@ -119,22 +139,30 @@ header {
     font-size: var(--font-size-navigator);
     font-family: var(--header-font-family);
     color: var(--font-color-navigator);
-
 }
 
 .nav-link:hover {
     color: var(--font-color-navigator-hover);
-    text-shadow: var(--nav-text-shadow);
+    text-shadow: var(--text-shadow-nav);
 }
 
 /* || HAMBURGER MENU BAR ||  */
 
 #hamburger-menu {
     display: none;
-
 }
 
 @media screen and (max-width: 640px) {
+
+    #logo {
+        box-sizing: content-box;
+        width: 7em;
+        margin-left: 3rem;
+        padding: 2em;
+        padding-left: 16em;
+        transition: var(--transitions-hamburger-menu);
+    
+    }
 
     .nav-bar {
         display: none;
@@ -144,7 +172,6 @@ header {
         z-index: 2;
         display: block;
         margin-top: 2em;
-
     }
 
     #hamburger-menu-bar {
@@ -157,10 +184,10 @@ header {
     .bar {
         height: 5px;
         width: 100%;
-        background-color: var(--hamburger-background-color);
+        background-color: var(--background-color-hamburger);
         display: block;
         border-radius: 5px;
-        transition: var(--hamburger-menu-transitions);
+        transition: var(--transitions-hamburger-menu);
     }
 
     #bar1 {
@@ -172,7 +199,7 @@ header {
     }
 
     .nav-hamburger-menu-bar {
-        transition: var(--hamburger-menu-transitions);
+        transition: var(--transitions-hamburger-menu);
         display: none;
     }
 
@@ -188,13 +215,12 @@ header {
     .nav-hamburger-menu-bar li a {
         color: var(--font-color-navigator);
         font-size: 20px;
-        text-decoration: none;
     }
 
     .nav-hamburger-menu-bar li a:hover {
         font-weight: bold;
         color: var(--font-color-navigator-hover);
-        text-shadow: var(--nav-text-shadow);
+        text-shadow: var(--text-shadow-nav);
     }
 
     .menu-bg,
@@ -209,9 +235,9 @@ header {
         width: 0;
         height: 0;
         margin: 30px 0 20px 20px;
-        background: radial-gradient(circle, var(--background-color-container), var(--background-color-container));
+        background: var(--background-color-hamburger-container);
         border-radius: 50%;
-        transition: var(--hamburger-menu-transitions);
+        transition: var(--transitions-hamburger-menu);
     }
 
     .change {
@@ -219,7 +245,7 @@ header {
     }
 
     .change .bar {
-        background-color: white;
+        background-color: var(--background-color-hamburger);
     }
 
     .change #bar1 {
@@ -248,14 +274,13 @@ header {
 
 .main {
     color: var(--font-color-main);
-
 }
 
 /* || Introduction Section ||  */
 
 .introduction-container {
-    background-color: var(--background-color-container);
-    box-shadow: var(--introduction-container-box-shadow);
+    background-color: var(--background-color-introduction-container);
+    box-shadow: var(--box-shadow-introduction-container);
     display: flex;
     margin: 12rem 6rem;
     border-radius: 1.5em;
@@ -280,8 +305,6 @@ header {
 .introduction-text-container {
     margin: 2em;
     flex: 1;
-
-
 }
 
 .introduction-image {
@@ -290,36 +313,37 @@ header {
 
 
 .introduction-title {
-    font-size: 2.2em;
-    text-shadow: var(--introduction-text-shadow);
+    text-shadow: var(--text-shadow-introduction);
     text-align: center;
 }
 
 .introduction-text {
     margin-top: 1em;
-    font-size: 1.1em;
+    font-size: var(--font-size-introduction-text);
     line-height: 1.4em;
+    margin-bottom: 3em;
 }
 
 .sign-button {
-    color: var(--button-color-introduction);
-    background-color: var(--button-background-color-introduction);
-    border: 0.2em solid var(--button-color-introduction);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color-button);
+    background-color: var(--background-color-button);
+    border: var(--border-button);
     cursor: pointer;
     border-radius: 2em;
     width: 10em;
     height: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 2em auto;
-    font-size: 1.2em;
+    font-size: var(--font-size-button);
 }
 
 .sign-button:hover {
-    color: var(--button-color-introduction-hover);
-    border-color: var(--button-color-introduction-hover);
-    background-color: var();
+    color: var(--font-color-button-hover);
+    border-color: var(--border-color-button-hover);
+    transform: translateY(-3%);
+    box-shadow: var(--box-shadow-button-hover);
 }
 
 /* || Features Section ||  */
@@ -329,7 +353,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: rgba(127, 125, 125, 0.2);
+    background-color: var(--background-color-features-container);
     padding: 2em 0;
     margin-bottom: 2em;
     align-items: center;
@@ -351,10 +375,18 @@ header {
     width: 12em;
     height: 14em;
     object-fit: cover;
-    border: 0.3em solid rgb(255, 255, 255);
+    border: var(--border-features-images);
     border-radius: 1.5em;
-    box-shadow: 0 10px 30px black;
     transition: 0.3s;
+}
+
+.features-images:hover {
+
+    border: 0.3em solid var(--font-color-navigator-hover);
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow-features-images-hover);
+
+
 }
 
 
@@ -372,67 +404,97 @@ header {
 
 }
 
-/*quote*/
+/*/* || Quote  ||  */
 
-.quote {
+.quote-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    font-size: 3em;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 3em;
+}
+
+
+.quote {
+    padding-left: 1.5em;
+    font-size: var(--font-size-quote);
     font-style: italic;
 
 }
 
 
 
-.quote-autor {
-    display: flex;
-    justify-content: center;
-    padding-left: 30em;
-    margin-top: 2em;
-    font-size: 1em;
+.quote-author {
+    font-size: var(--font-size-quote-author);
     font-weight: 900;
+    margin-top: 2em;
 }
 
 
 
 .feature-title,
-.call-title {
+.call-title,
+.introduction-title {
 
     font-weight: 900;
-    font-size: 36px;
+    font-size: 2rem;
 
 }
 
 
 
-/*call to action*/
+
+
+/* || Call to action Section ||  */
 .call-container {
-    border-radius: 20px;
     display: flex;
-    margin: 6em;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding-bottom: 2em;
-    padding-top: 2em;
+    margin-top: 6em;
+    background-color: var(--background-color-call-container);
+    justify-content: center;
+    align-items: center;
+
 }
 
-.call-text-container {
+.call-items-container {
+    width: 65%;
+    margin: 2em 0;
+    padding: 2em;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 15em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--background-color-call-items-container);
+    border-radius: 1.5em;
+
 }
 
 .call-text {
+    margin-bottom: 0.5em;
     margin-top: 1em;
-    font-size: 1.5em;
 }
 
 
 
-
-/*footer*/
-#contact {
+/*/* || Footer  ||  */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    background-color: black;
+    background-color: var(--background-color-header);
+    color: var(--font-color-footer);
+    padding: 2em;
+
+}
+
+.github-link {
+
+    color: var(--font-color-footer);
+}
+
+.github-link:hover {
+
+    color: var(--font-color-footer-hover);
 }
